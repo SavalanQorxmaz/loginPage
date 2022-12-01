@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    user-select: none;
 }
 
 
@@ -23,19 +24,30 @@
     min-width: 300px;
     border: 3px solid black;
     border-radius: 20px;
-    display: flex;
+    padding: 2%;
+    padding-top: 10%;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     color: black;
     box-shadow: 0px 0px 5px red;
        
 }
 
-#loginForm label {
-    align-self: start;
-    margin-left: 20px;
+.labelForm {
+ 
     visibility: hidden;
+}
+
+.buttonClear {
+    float: right;
+    border-radius: 20%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    visibility: hidden;
+
 }
 
 
@@ -43,38 +55,46 @@
 
 
 
-#loginForm input {
+.inputForm {
+    display: block;
+    width: 100%;
     margin-bottom: 40px;
     line-height: 30px;
     font-weight: 200;
     border: none;
     border-bottom: 2px solid black;;
     outline: none;
-    width: 80%;
-        
+    
+    
 }
 
 
 #submitForm  {
-
+    margin: auto;
+    margin-bottom: 30px;
+    display: block;
     width: 70%;
     height: 10%;
     border-radius: 5%;
     border: none;
-    background-color: darkgray;
     cursor: pointer;
     color: white;
     background-color: black;
 }
 
-#resetForm  {
+#savePassword {
+    display: block;
+    margin-bottom: 30px;
+    color: green;
+}
 
-    /* width: 30%;
-    height: 5%; */
-    border-radius: 5%;
-    border: none;
-    cursor: pointer;
-    color: white;
-    background-color: black;
-    margin-top: 10px;
+#forgetPassword {
+
+   float: right;
+   margin-top: 20px;
+}
+
+#forgetPassword a {
+    text-decoration: none;
+    color: brown;
 }

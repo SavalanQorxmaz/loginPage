@@ -13,18 +13,23 @@
 
        <form id="loginForm" action="#" method="get">
 
-        <label for="email" id="labelEmail">Email</label>
-        <input type="email" name="email" id="inputEmail" placeholder="EMAIL">
+        <label for="email" id="labelEmail" class="labelForm">Email</label>
+        <button class="buttonClear" id="buttonEmailClear">X</button>
+        <input type="text" name="email" id="inputEmail" class="inputForm" placeholder="EMAIL">
         
-        <label for="password" id="labelPassword">Password</label>
-        <input type="password" name="password" id="inputPassword" placeholder="PASSWORD">
+        <label for="password" id="labelPassword" class="labelForm">Password</label>
+        <button class="buttonClear" id="buttonPasswordClear">X</button>
+        <input type="password" name="password" id="inputPassword" class="inputForm" placeholder="PASSWORD">
        
+        <label id="savePassword" for="remember"><input type="checkbox" name="check" id="remember"> Remember me</label>
+
         <button type="submit" id="submitForm">Login</button>
 
-        <button type="reset" id="resetForm">reset</button>
+        <p id="forgetPassword"><a href="#">Forgot Password</a></p>
+
 
        </form>
-
+      
     </div>
 
 
